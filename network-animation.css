@@ -1,0 +1,239 @@
+/* Projects Network Animation Styles */
+.projects-network-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: #fff;
+    padding: 4rem 0;
+}
+
+.network-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 900px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SVG Connection Lines */
+.connection-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.connection-path {
+    fill: none;
+    stroke: #e1e1e1;
+    stroke-width: 2;
+    stroke-dasharray: 4,4;
+    animation: dashAnimation 30s linear infinite;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.1));
+}
+
+@keyframes dashAnimation {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    border: 2px solid #e1e1e1;
+}
+
+.center-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.center-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.network-item {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transition: all 0.8s ease;
+}
+
+/* Position calculations for perfect circle arrangement */
+.network-item[data-position="1"] { 
+    top: 15%; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.network-item[data-position="2"] { 
+    top: 50%; 
+    right: 15%; 
+    transform: translateY(-50%);
+}
+
+.network-item[data-position="3"] { 
+    bottom: 15%; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.network-item[data-position="4"] { 
+    top: 50%; 
+    left: 15%; 
+    transform: translateY(-50%);
+}
+
+.network-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    border: 2px solid #e1e1e1;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.network-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.network-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.95);
+    color: #333;
+    padding: 1.2rem;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.network-content h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.network-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Hover Effects */
+.network-circle:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+    z-index: 4;
+}
+
+.network-circle:hover img {
+    opacity: 1;
+}
+
+/* Animation Classes */
+.scroll-zoom-in {
+    animation: zoomIn 0.8s ease forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .network-container {
+        height: 700px;
+    }
+    
+    .center-content {
+        width: 200px;
+        height: 200px;
+        padding: 2rem;
+    }
+    
+    .network-item {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .network-container {
+        height: 600px;
+    }
+    
+    .center-content {
+        width: 160px;
+        height: 160px;
+        padding: 1.5rem;
+    }
+    
+    .network-item {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .center-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .center-content p {
+        font-size: 0.9rem;
+    }
+    
+    .network-content {
+        padding: 0.8rem;
+    }
+    
+    .network-content h4 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .network-content p {
+        font-size: 0.8rem;
+    }
+}

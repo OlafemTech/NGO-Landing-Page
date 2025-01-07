@@ -1,0 +1,563 @@
+/* Program Hero Section */
+.program-hero {
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.program-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+}
+
+.program-hero .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.program-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.program-hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Program Overview */
+.program-overview h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.key-stats .stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.key-stats .stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.key-stats .stat-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.key-stats .stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.key-stats .stat-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* Focus Areas */
+.focus-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-5px);
+}
+
+.focus-card .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.focus-card .icon-wrapper i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.focus-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.focus-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* Success Stories */
+.story-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.story-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover img {
+    transform: scale(1.1);
+}
+
+.story-content {
+    padding: 1.5rem;
+}
+
+.story-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.story-content p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.read-more i {
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Program Event Cards */
+.program-event-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.program-event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-date {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.event-date .month {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.event-date .day {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 0.5rem;
+}
+
+.event-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.event-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.event-content p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-content i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.event-content .btn {
+    margin-top: 1rem;
+}
+
+/* Get Involved Section */
+.get-involved {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
+}
+
+/* Campaign Cards */
+.campaign-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.campaign-card:hover {
+    transform: translateY(-5px);
+}
+
+.campaign-progress {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress-text {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.campaign-content {
+    padding: 1.5rem;
+}
+
+.campaign-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.campaign-stats {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.campaign-stats li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.campaign-stats i {
+    color: var(--primary-color);
+}
+
+/* Resource Cards */
+.resource-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.resource-card .icon-wrapper i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.resource-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.resource-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Report Form */
+.report-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.report-form .form-control,
+.report-form .form-select {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.report-form .form-control:focus,
+.report-form .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(var(--primary-rgb), 0.25);
+}
+
+.report-form .form-check-label {
+    color: #666;
+}
+
+/* Emergency Contact */
+.emergency-contact {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.emergency-contact .btn {
+    white-space: nowrap;
+}
+
+/* Governance Tools */
+.tool-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.tool-icon i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.tool-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.tool-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.tool-card .btn {
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .program-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .program-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .key-stats .stat-card {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-hero {
+        height: 50vh;
+    }
+    
+    .program-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .focus-card {
+        padding: 1.5rem;
+    }
+    
+    .story-card img {
+        height: 200px;
+    }
+    
+    .campaign-card {
+        margin-bottom: 1rem;
+    }
+    
+    .resource-card {
+        padding: 1.5rem;
+    }
+    
+    .resource-card .icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .resource-card .icon-wrapper i {
+        font-size: 1.5rem;
+    }
+    
+    .emergency-contact .btn {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .tool-card {
+        padding: 1.5rem;
+    }
+    
+    .tool-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .tool-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .program-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .program-hero p {
+        font-size: 1rem;
+    }
+    
+    .key-stats .stat-card i {
+        font-size: 2rem;
+    }
+    
+    .key-stats .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .focus-card .icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .focus-card .icon-wrapper i {
+        font-size: 1.5rem;
+    }
+    
+    .program-event-card {
+        flex-direction: column;
+    }
+
+    .event-date {
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .event-date .month {
+        font-size: 1rem;
+    }
+
+    .event-date .day {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+}

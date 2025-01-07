@@ -1,0 +1,195 @@
+/* Impact Section Styles */
+.impact-section {
+    position: relative;
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    overflow: hidden;
+}
+
+.impact-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0,123,255,0.05) 0%, rgba(0,123,255,0) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.impact-header {
+    margin-bottom: 4rem;
+}
+
+.impact-header .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.impact-header .section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.impact-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.impact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.impact-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.impact-stats {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-suffix {
+    font-size: 2rem;
+    color: #007bff;
+    margin-left: 0.25rem;
+}
+
+.impact-card h3 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Progress Ring Styles */
+.progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.progress-ring__circle {
+    transform: rotate(-90deg);
+}
+
+.progress-ring__circle-bg,
+.progress-ring__circle-progress {
+    fill: none;
+    stroke-width: 3;
+}
+
+.progress-ring__circle-bg {
+    stroke: #e9ecef;
+}
+
+.progress-ring__circle-progress {
+    stroke: #007bff;
+    stroke-dasharray: 326.726;
+    stroke-dashoffset: 326.726;
+    transition: stroke-dashoffset 1s ease;
+}
+
+/* Impact Story Styles */
+.impact-story {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 4rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.impact-story h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.impact-story p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.impact-story .btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Animation Classes */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.counter {
+    animation: countUp 0.5s ease forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-section {
+        padding: 4rem 0;
+    }
+
+    .impact-header .section-title {
+        font-size: 2rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .impact-card {
+        padding: 1.5rem;
+    }
+
+    .impact-stats {
+        font-size: 2.2rem;
+    }
+
+    .impact-story {
+        padding: 2rem;
+    }
+
+    .impact-story h3 {
+        font-size: 1.8rem;
+    }
+}

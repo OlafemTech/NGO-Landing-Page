@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Rights - Community Impact Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../programs.css">
+    <style>
+        body {
+            padding-top: 100px;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="tel:+2348131017099"><i class="fas fa-phone"></i> (+234) 813-101-7099</a>
+                    <a href="mailto:digitalcivitas855@gmail.com"><i class="fas fa-envelope"></i> digitalcivitas855@gmail.com</a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="https://github.com/olafemtech" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/digital_civitas" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/habeeb-oluwafemi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <a href="../index.html" class="logo">
+                        <img src="../images/logo.jpg" alt="CII Logo" class="logo-img">
+                        <span class="org-name">Community Impact <span class="text-primary">Initiative</span></span>
+                    </a>
+                </div>
+                <div class="col-lg-9 text-end">
+                    <div class="header-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <span>Email Us</span>
+                                <a href="mailto:digitalcivitas855@gmail.com">digitalcivitas855@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-text">
+                                <span>Call Us</span>
+                                <a href="tel:+2348131017099">(+234) 813-101-7099</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <a href="../index.html#donate" class="btn btn-primary">
+                                <i class="fas fa-heart me-2"></i>Donate Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-lg-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="../index.html#mission">
+                                <i class="fas fa-bullseye"></i> Our Mission
+                            </a></li>
+                            <li><a class="dropdown-item" href="../index.html#team">
+                                <i class="fas fa-users"></i> Our Team
+                            </a></li>
+                            <li><a class="dropdown-item" href="../index.html#impact">
+                                <i class="fas fa-chart-line"></i> Our Impact
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../index.html#history">
+                                <i class="fas fa-history"></i> Our History
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Programs</a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="community-development.html">
+                                <i class="fas fa-home"></i> Community Development
+                            </a></li>
+                            <li><a class="dropdown-item" href="youth-empowerment.html">
+                                <i class="fas fa-graduation-cap"></i> Youth Empowerment
+                            </a></li>
+                            <li><a class="dropdown-item active" href="human-rights.html">
+                                <i class="fas fa-balance-scale"></i> Human Rights
+                            </a></li>
+                            <li><a class="dropdown-item" href="good-governance.html">
+                                <i class="fas fa-landmark"></i> Good Governance
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Get Involved</a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="../index.html#volunteer">
+                                <i class="fas fa-hands-helping"></i> Volunteer
+                                <span class="badge bg-primary">Join Us</span>
+                            </a></li>
+                            <li><a class="dropdown-item" href="../index.html#partner">
+                                <i class="fas fa-handshake"></i> Partner With Us
+                            </a></li>
+                            <li><a class="dropdown-item" href="../index.html#donate">
+                                <i class="fas fa-gift"></i> Make a Donation
+                                <span class="badge bg-success">Support</span>
+                            </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../index.html#careers">
+                                <i class="fas fa-briefcase"></i> Careers
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="../index.html#news">
+                                <i class="fas fa-newspaper"></i> News & Updates
+                            </a></li>
+                            <li><a class="dropdown-item" href="../index.html#blog">
+                                <i class="fas fa-blog"></i> Blog
+                            </a></li>
+                            <li><a class="dropdown-item" href="../index.html#publications">
+                                <i class="fas fa-file-alt"></i> Publications
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-buttons d-flex align-items-center">
+                    <a href="#search" class="btn btn-link nav-search me-2">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="../index.html#donate" class="btn btn-primary donate-btn">
+                        <i class="fas fa-heart me-2"></i>Donate Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Program Hero Section -->
+    <section class="program-hero" style="background-image: url('../images/human rights advocacy event_.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Human Rights</h1>
+                <p>Advocating for fundamental rights and promoting social justice in communities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="program-overview py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Defending Human Rights</h2>
+                    <p class="lead">We work tirelessly to protect and promote human rights through advocacy, education, and direct support to communities.</p>
+                    <p>Our comprehensive approach includes legal aid, advocacy campaigns, community education, and support services for vulnerable populations.</p>
+                    <div class="key-stats mt-4">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-gavel"></i>
+                                    <h3>1,000+</h3>
+                                    <p>Cases Supported</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-users"></i>
+                                    <h3>10,000+</h3>
+                                    <p>People Reached</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-handshake"></i>
+                                    <h3>25+</h3>
+                                    <p>Partner Organizations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../images/advocating rights_.jpg" alt="Human Rights Advocacy" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Campaigns -->
+    <section class="campaigns-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Current Campaigns</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="campaign-card">
+                        <div class="campaign-progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                            <span class="progress-text">75% of goal reached</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Access to Justice</h3>
+                            <p>Providing legal aid and support to underserved communities.</p>
+                            <ul class="campaign-stats">
+                                <li><i class="fas fa-user-friends"></i> 500 Supporters</li>
+                                <li><i class="fas fa-calendar-alt"></i> 45 Days Left</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Support Campaign</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="campaign-card">
+                        <div class="campaign-progress">
+                            <div class="progress-bar" style="width: 60%"></div>
+                            <span class="progress-text">60% of goal reached</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Women's Rights</h3>
+                            <p>Empowering women through advocacy and support programs.</p>
+                            <ul class="campaign-stats">
+                                <li><i class="fas fa-user-friends"></i> 750 Supporters</li>
+                                <li><i class="fas fa-calendar-alt"></i> 30 Days Left</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Support Campaign</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="campaign-card">
+                        <div class="campaign-progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                            <span class="progress-text">85% of goal reached</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Child Protection</h3>
+                            <p>Safeguarding children's rights and well-being.</p>
+                            <ul class="campaign-stats">
+                                <li><i class="fas fa-user-friends"></i> 1000 Supporters</li>
+                                <li><i class="fas fa-calendar-alt"></i> 15 Days Left</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Support Campaign</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Resources -->
+    <section class="legal-resources py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Legal Resources</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="resource-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3>Know Your Rights</h3>
+                        <p>Educational materials about fundamental human rights.</p>
+                        <a href="#" class="btn btn-outline-primary">Access Resources</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="resource-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Legal Aid</h3>
+                        <p>Free legal consultation and representation services.</p>
+                        <a href="#" class="btn btn-outline-primary">Get Help</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="resource-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Documentation</h3>
+                        <p>Guidelines for documenting human rights violations.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="resource-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Support Services</h3>
+                        <p>Counseling and support for rights violation victims.</p>
+                        <a href="#" class="btn btn-outline-primary">Get Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Impact Stories</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="story-card">
+                        <img src="../images/human rights advocacy_ community outreach program.jpg" alt="Community Outreach">
+                        <div class="story-content">
+                            <h3>Justice for Communities</h3>
+                            <p>How our legal aid program helped secure land rights for a local community.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="story-card">
+                        <img src="../images/advocating rights_.jpg" alt="Rights Advocacy">
+                        <div class="story-content">
+                            <h3>Women's Empowerment</h3>
+                            <p>Supporting women's rights through advocacy and education.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="story-card">
+                        <img src="../images/human rights advocacy event_.jpg" alt="Advocacy Event">
+                        <div class="story-content">
+                            <h3>Policy Change</h3>
+                            <p>How our advocacy led to important policy reforms.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Rights Violation -->
+    <section class="report-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Report a Rights Violation</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="report-form">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select">
+                                        <option selected>Type of Violation</option>
+                                        <option>Civil Rights</option>
+                                        <option>Labor Rights</option>
+                                        <option>Women's Rights</option>
+                                        <option>Child Rights</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Describe the Incident"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="confidentialCheck">
+                                        <label class="form-check-label" for="confidentialCheck">
+                                            Keep my information confidential
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit Report</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2>Need Immediate Help?</h2>
+                    <p class="lead mb-0">Our 24/7 emergency hotline is always available for urgent human rights concerns.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="tel:+2348131017099" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone-alt me-2"></i>Call Emergency Hotline
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Community Impact Initiative</h4>
+                    <p>Empowering communities, transforming lives through sustainable development and advocacy.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/olafemtech"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/digital_civitas"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/habeeb-oluwafemi"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Our Programs</a></li>
+                        <li><a href="#impact">Our Impact</a></li>
+                        <li><a href="#news">News & Updates</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#donate">Make a Donation</a></li>
+                        <li><a href="#partner">Partner With Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Gwarimpa, Abuja, Nigeria</li>
+                        <li><i class="fas fa-phone"></i> (+234) 813-101-7099</li>
+                        <li><i class="fas fa-envelope"></i> digitalcivitas855@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 Community Impact Initiative. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="impact-animation.js"></script>
+    <script src="network-animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
